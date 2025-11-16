@@ -1,0 +1,8 @@
+site_name: Documentation du Projet.
+site_dir: site
+theme:
+  name: material
+
+nav:
+  - Accueil: index.md
+  - À propos: about.md
