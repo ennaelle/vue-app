@@ -15,7 +15,7 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Lint code
         run: npm run lint
   unit:
@@ -28,6 +28,8 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'  
+      - name: Install dependencies
+        run: npm install          
       - name: Run tests
         run: npm run test:unit:report
       - uses: actions/upload-artifact@v4
